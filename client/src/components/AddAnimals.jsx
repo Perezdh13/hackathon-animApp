@@ -53,39 +53,51 @@ function AddAnimals() {
     </div>
 
     return (
-        <div className="container m-auto">
+        <div className="container m-auto  addAnimals">
             <Form>
                 <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
-                    <Form.Label column sm={2}>
-                        Nombre...
-                    </Form.Label>
                     <Col sm={10}>
+                        <Form.Label column sm={2}>
+                            Nombre...
+                        </Form.Label>
                         <Form.Control value={name} onChange={e => setName(e.target.value)} />
                     </Col>
                 </Form.Group>
 
                 <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
-                    <Form.Label Row sm={2}>
-                        Edad...
-                    </Form.Label>
-                    <Col sm={10}>
-                        <Form.Control value={age} onChange={e => setAge(e.target.value)} />
-                        <Form.Check
-                            type="radio"
-                            label="años"
-                            name="formHorizontalRadios"
-                            id="formHorizontalRadios1"
-                        />
-                        <Form.Check
-                            type="radio"
-                            label="meses"
-                            name="formHorizontalRadios"
-                            id="formHorizontalRadios1"
-                        />
-                        <Form.Label column sm={2}>
-                            Altura en cm
-                        </Form.Label>
-                        <Form.Control value={height} onChange={e => setHeight(e.target.value)} />
+                    <Col>
+                        <Form.Group className="d-flex">
+                            <Form.Group className="col-2 me-5">
+                                <Form.Label  column sm={1}>
+                                    Edad...
+                                </Form.Label>
+                                <Col>
+                                    <Form.Control value={age} onChange={e => setAge(e.target.value)} />
+                                </Col>
+                            </Form.Group>
+                            <Form.Group className="d-flex age">
+                                <Form.Check className="me-2"
+                                    type="radio"
+                                    label="años"
+                                    name="formHorizontalRadios"
+                                    id="formHorizontalRadios1"
+                                />
+                                <Form.Check className="ms-2"
+                                    type="radio"
+                                    label="meses"
+                                    name="formHorizontalRadios"
+                                    id="formHorizontalRadios1"
+                                />
+                            </Form.Group>
+                            <Form.Group className="ms-4 ">
+                                <Form.Label column sm={6}>
+                                    Altura en cm
+                                </Form.Label>
+                                <Col className="w-75">
+                                    <Form.Control value={height} onChange={e => setHeight(e.target.value)} />
+                                </Col>
+                            </Form.Group>
+                        </Form.Group>
                     </Col>
                 </Form.Group>
 
@@ -94,14 +106,14 @@ function AddAnimals() {
                         Describe a tu mascota
                     </Form.Label>
                     <InputGroup>
-                        <Form.Control value={description} onChange={e => setDescription(e.target.value)} />
+                        <Form.Control as="textarea" value={description} onChange={e => setDescription(e.target.value)} />
                     </InputGroup>
                 </Form.Group>
                 <Form.Group>
                     <Form.Label column sm={2}>
                         Selecciona una especie
                     </Form.Label>
-                    <Form.Select aria-label="Default select example"value={species} onChange={e => setSpecie(e.target.value)}>
+                    <Form.Select aria-label="Default select example" value={species} onChange={e => setSpecie(e.target.value)}>
                         <option></option>
                         <option value="Perro">Perro</option>
                         <option value="Gato">Gato</option>
@@ -116,7 +128,7 @@ function AddAnimals() {
                     </Form.Group>
                     {"" && (
                         <div>
-                            <img src={`data:image/jpeg;base64,${""}`} />
+                            <img src={`data:image/jpeg;base64,${""}`} alt='' />
                         </div>
                     )}
                 </Form.Group>
@@ -146,17 +158,12 @@ function AddAnimals() {
                         </Col>
                     </Form.Group>
                 </fieldset>
-                <Form.Group as={Row} className="mb-3" controlId="formHorizontalCheck">
-                    <Col sm={{ span: 10, offset: 2 }}>
-                        
-                    </Col>
-                </Form.Group>
 
-                <Form.Group as={Row} className="mb-3">
-                    <Col sm={{ span: 10, offset: 2 }}>
-                        <Button variant="warning" onClick={addPets}>Publicar</Button>
-                        <Button variant="warning">Cancelar</Button>
-                    </Col>
+
+
+                <Form.Group className="d-flex gap-5" >
+                    <Button variant="warning" onClick={addPets}>Publicar</Button>
+                    <Button variant="warning">Cancelar</Button>
                 </Form.Group>
             </Form>
         </div>
