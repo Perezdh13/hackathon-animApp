@@ -1,9 +1,9 @@
 import React from 'react'
 
-function headerBar() {
+function HeaderBar() {
   return (
     <div>headerbar</div>
   )
 }
 
-export default headerBar
+export default HeaderBar

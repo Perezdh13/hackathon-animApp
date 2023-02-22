@@ -1,5 +1,6 @@
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
-import headerBar from './components/headerBar';
+import HeaderBar from './components/HeaderBar';
+import AddAnimals from './components/AddAnimals';
 import '../src/css/App.css';
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
 
     {
       path:"/",
-      element:<>   </>
+      element:<><HeaderBar /> <AddAnimals/></>
     },
     {
       path:"/",
@@ -23,7 +24,7 @@ function App() {
   return (
     <div className="App">
       <h1>animApp </h1>
-
+      
       <RouterProvider router={router} />
     </div>
   );
