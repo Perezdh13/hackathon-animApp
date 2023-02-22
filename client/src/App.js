@@ -16,7 +16,7 @@ function App() {
 
     {
       path:"/",
-      element:<><HeaderBar /> <AddAnimals/>  </>
+      element:<><HeaderBar />   </>
     },
     {
       path:"/about",
@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-    
+     
       
       <RouterProvider router={router} />
     </div>

@@ -1,9 +1,98 @@
-.headerContainer {
-    background-color: #F3B34C;
-height: 20vh;
-    
-}
+
 #basic-navbar-nav {
     background-color:#F3B34C ;
     color: white;
+    margin-top: 1rem;
+}
+
+.link-bar{
+    text-transform: uppercase;
+}
+
+/*  mediaqueries mobile */
+
+@media  (min-width:200px)and (max-width:599px ){
+   
+    .logo{
+        margin-top: 1vh;
+        object-fit: contain;
+        width: 60%;
+        transition: all 0.5s ease;
+         
+}
+    .hamburger span{
+        font-size: 1.5rem;
+        transition: ease;
+
+}
+
+    .headerContainer {
+        background-color:#F3B34C ;
+        height: 30vh;
+    
+}
+
+
+}
+
+/* mediaqueries tablet  */
+@media  (min-width:600px)and (max-width:1920px ){
+   
+    .logo{
+        width: 20rem;
+        margin-top: 1vh;
+        margin-left: 2rem;
+        object-fit: contain;
+        transition:  ease 2s;
+
+         
+}
+    .hamburger span{
+        font-size: 2rem;
+        transition: all 0.5s ease;
+
+}
+
+    .headerContainer {
+        background-color:#F3B34C ;
+        height: 30vh;
+    
+}
+
+.link-bar{
+    margin-left: 4rem;
+text-transform: uppercase;
+}
+
+    
+
+
+}
+
+@media  (min-width:1024px)and (max-width:1880px ){
+   
+    .logo{
+        margin-top: 1vh;
+        object-fit: contain;
+        transition:  ease 2s;
+
+         
+}
+    .hamburger span{
+        font-size: 2rem;
+        transition: all 0.5s ease;
+
+}
+
+    .headerContainer {
+        background-color:#F3B34C ;
+        height: 30vh;
+    
+}
+
+    .link-bar{
+        margin-left: 4rem;
+    text-transform: uppercase;
+}
+
 }

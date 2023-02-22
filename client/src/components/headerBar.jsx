@@ -4,13 +4,12 @@ import Logo from '../img/Logo.png'
 import '../css/Header.css'
 function HeaderBar() {
   return (
-    <div className='headerContainer' 
+    <div className='headerContainer d-flex justify-content-between'>
+      
+        <img className='logo ' src={Logo} alt="logo animalAPP" />
+        
+        <NavBar/>
    
-    >
-      <div className="container">
-        <img src={Logo} alt="" style={{float: 'left', maxWidth: '100%'}} />
-        <NavBar />
-      </div>
     </div>
   )
 }
