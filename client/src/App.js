@@ -7,6 +7,7 @@ import Carrousel from './components/Carrousel';
 import HomePage from './components/HomePage';
 import SingleAnimal from './components/SingleAnimal';
 import '../src/css/App.css';
+import AboutMe  from './components/AboutMe';
 
 function App() {
 
@@ -14,11 +15,11 @@ function App() {
 
     {
       path:"/",
-      element:<><HeaderBar /> <AddAnimals/></>
+      element:<><HeaderBar /> <AddAnimals/>  </>
     },
     {
-      path:"/",
-      element:<>   </>
+      path:"/about",
+      element:<>  <AboutMe />  </>
     },
     {
       path:"/",
