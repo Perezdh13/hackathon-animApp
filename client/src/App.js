@@ -8,6 +8,7 @@ import HomePage from './components/HomePage';
 import SingleAnimal from './components/SingleAnimal';
 import Contact from './components/Contact';
 import '../src/css/App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
 
     {
       path:"/",
-      element:<> </>
+      element:<><AddAnimals/></>
     },
     {
       path:"/singleAnimal",
@@ -29,8 +30,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>animApp </h1>
-      <HeaderBar/>
+      
+      
       <RouterProvider router={router} />
     </div>
   );
