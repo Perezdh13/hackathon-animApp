@@ -1,4 +1,5 @@
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+import headerBar from './components/headerBar';
 import '../src/css/App.css';
 
 function App() {
