@@ -1,9 +1,14 @@
 .Container-fluid {
-background-color: #A17161;
-height: 5rem;
-margin-top: 43px;
+    background-color: #A17161;
+    height: 5rem;
+    margin-top: 43px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.img {
-
+.Container-fluid img {
+    width: 3rem;
+    height: 3rem;
+    margin: auto;
 }
