@@ -16,7 +16,7 @@ function App() {
 
     {
       path:"/",
-      element:<><Search/> </>
+      element:<><HeaderBar/><Carrousel/><Search/><HomePage/><FooterBar/> </>
     },
     {
       path:"/singleAnimal",
