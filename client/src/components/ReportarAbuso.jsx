@@ -16,3 +16,5 @@ o abuso repórtalo a las autoridades competentes.
 </div>
 )
 }
+
+export default ReportarAbuso
