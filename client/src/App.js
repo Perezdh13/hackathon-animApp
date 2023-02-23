@@ -4,13 +4,11 @@ import FooterBar from './components/FooterBar';
 import Search from './components/Search';
 import Carrousel from './components/Carrousel';
 import HomePage from './components/HomePage';
+import HeaderBar from './components/headerBar'
 import SingleAnimal from './components/SingleAnimal';
+import Contact from './components/Contact';
 import '../src/css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React, { useState } from "react";
-
-
-
 
 
 
@@ -20,11 +18,11 @@ function App() {
 
     {
       path:"/",
-      element:<> <AddAnimals/></>
+      element:<><AddAnimals/></>
     },
     {
-      path:"/",
-      element:<>   </>
+      path:"/singleAnimal",
+      element:<> <HeaderBar/> <SingleAnimal/> <FooterBar/> </>
     },
     {
       path:"/",
@@ -34,8 +32,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>animApp </h1>
-      <Carrousel/>
+      
+      <Carrousel></Carrousel>
       <RouterProvider router={router} />
     </div>
   );
