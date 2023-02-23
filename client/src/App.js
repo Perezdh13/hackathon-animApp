@@ -1,17 +1,16 @@
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
-import HeaderBar from './components/HeaderBar';
 import AddAnimals from './components/AddAnimals';
 import FooterBar from './components/FooterBar';
 import Search from './components/Search';
 import Carrousel from './components/Carrousel';
 import HomePage from './components/HomePage';
+import HeaderBar from './components/headerBar'
 import SingleAnimal from './components/SingleAnimal';
 import Contact from './components/Contact';
 import '../src/css/App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import AboutMe  from './components/AboutMe';
 
 function App() {
-
   const router = createBrowserRouter([
 
     {
@@ -19,19 +18,19 @@ function App() {
       element:<><HeaderBar/><Carrousel/><Search/><HomePage/><FooterBar/> </>
     },
     {
-      path:"/singleAnimal",
-      element:<> <HeaderBar/> <SingleAnimal/> <FooterBar/> </>
+      path:"/about",
+      element:<>    </>
     },
     {
-      path:"/",
-      element:<>   </>
+      path:"/reportarabuso",
+      element:<> <ReportarAbuso />  </>
     },
   ])
 
   return (
     <div className="App">
       
-     
+      <Carrousel></Carrousel>
       <RouterProvider router={router} />
     </div>
   );
