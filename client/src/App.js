@@ -8,13 +8,14 @@ import HomePage from './components/HomePage';
 import SingleAnimal from './components/SingleAnimal';
 import '../src/css/App.css';
 import AboutMe  from './components/AboutMe';
+import ReportarAbuso  from './components/ReportarAbuso';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const router = createBrowserRouter([
     {
       path:"/",
-      element:<><HeaderBar />   </>
+      element:<><HeaderBar /> <Carrousel/><Search/>  </>
     },
     {
       path:"/about",
@@ -22,12 +23,7 @@ function App() {
     },
     {
       path: "/reportarabuso",
-      element: (
-        <>
-          {" "}
-          <ReportarAbuso />{" "}
-        </>
-      ),
+      element: <> <ReportarAbuso/> </>
     },
   ]);
 
