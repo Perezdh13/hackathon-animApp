@@ -6,7 +6,9 @@ import Search from './components/Search';
 import Carrousel from './components/Carrousel';
 import HomePage from './components/HomePage';
 import SingleAnimal from './components/SingleAnimal';
+import Contact from './components/Contact';
 import '../src/css/App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
@@ -14,11 +16,11 @@ function App() {
 
     {
       path:"/",
-      element:<><HeaderBar /> <AddAnimals/></>
+      element:<><AddAnimals/></>
     },
     {
-      path:"/",
-      element:<>   </>
+      path:"/singleAnimal",
+      element:<> <HeaderBar/> <SingleAnimal/> <FooterBar/> </>
     },
     {
       path:"/",
@@ -28,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>animApp </h1>
+      
       
       <RouterProvider router={router} />
     </div>
