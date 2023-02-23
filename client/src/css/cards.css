@@ -71,3 +71,25 @@ transform: perspective(600px) rotateY(180deg);
 .cardi:hover .back {
     transform: perspective(600px) rotateY(360deg);
 }
+cardi .back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+.cardi .back .link a {
+    color: #f3f3f3;
+    margin: 5px;
+}
+@media screen and (min-width: 425px ){
+    .cardi{
+        width: 180px;
+        height: 260px;
+        margin: 10px;
+    }
+}
+@media screen and (min-width: 768px ){
+    .cardi{
+        width: 350px;
+        height: 400px;
+    }
+}
