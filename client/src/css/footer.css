@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+   
     
 }
 
@@ -20,11 +21,38 @@
     height: 3rem;
     margin: 0;
 }
+.report-text{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.report-text-h3{
+    background-color: white;
+    margin-top: 5px;
+}
+.aboutMe{
+    margin-top: 50px;
+    
+}
+.aboutMe-h3{
+    background-color: white;
+    
+}
+.container-aboutMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.report{
+    margin-top: 25vh;
+    margin-bottom: 26vh;
+
+}
 
 .alert-cont{
-    margin-top: 40px;
-    margin-bottom: 190px;
-}
-   
+    margin-top: 20vh;
+    margin-bottom: 22vh;
 
+}
 

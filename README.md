@@ -16,9 +16,8 @@ AnimApp es una aplicación web de comercio electrónico diseñada para ayudar a 
 
 ## Prototipado
 
-![captura animapp1](https://user-images.githubusercontent.com/115170876/220869958-1dd12e7a-f715-45e8-a68f-1c11a96335de.png)
-![captura animapp2](https://user-images.githubusercontent.com/115170876/220870347-023e84a9-b92b-427a-9f73-b4675f3b5868.png)
 
+![readme figma](https://user-images.githubusercontent.com/116543383/221030284-a6187222-b4b5-41c9-b737-1a148498a2d6.png)
 
 
 ## Instalación
@@ -50,7 +49,7 @@ AnimApp es una aplicación web de comercio electrónico diseñada para ayudar a 
 ## Participantes
 Este proyecto ha sido realizado por un equipo de 9 programadores en formación:
 
-[<img src="https://avatars.githubusercontent.com/u/120563338?v=4" width=115><br><sub>Pablo Pérez González</sub>](https://github.com/Perezdh13)|[<img src="https://avatars.githubusercontent.com/u/115170876?v=4" width=115><br><sub> Xavi Villaverde </sub>](https://github.com/Xavi1594)|[<img src="https://avatars.githubusercontent.com/u/110405159?v=4" width=115><br><sub>Yorlin Pachajoa</sub>](https://github.com/YorlinPacha) |[<img src="https://avatars.githubusercontent.com/u/117035764?v=4" width=115><br><sub>Marian Garcia</sub>](https://github.com/Marian4gc) | [<img src="https://github.com/irenefl" width=115><br><sub>Irene Fernandez</sub>](https://github.com/irenefl) |[<img src="https://avatars.githubusercontent.com/u/114617641?v=4" width=115><br><sub>Francisco Aguirre</sub>](hhttps://github.com/Francisco-Aguirr) | [<img src="https://avatars.githubusercontent.com/u/118717951?v=4" width=115><br><sub>Margarita Alvarez</sub>](https://github.com/MargaritaAlvarezGonz?tab=repositories) | [<img src="https://avatars.githubusercontent.com/u/117463292?v=4" width=115><br><sub>Anyell</sub>](https://github.com/Anismelow) | [<img src="https://avatars.githubusercontent.com/u/116543383?v=4" width=115><br><sub>Veronika Komarova</sub>](https://github.com/VeronikaKoma)
+[<img src="https://avatars.githubusercontent.com/u/120563338?v=4" width=115><br><sub>Pablo Pérez González</sub>](https://github.com/Perezdh13)|[<img src="https://avatars.githubusercontent.com/u/115170876?v=4" width=115><br><sub> Xavi Villaverde </sub>](https://github.com/Xavi1594)|[<img src="https://avatars.githubusercontent.com/u/110405159?v=4" width=115><br><sub>Yorlin Pachajoa</sub>](https://github.com/YorlinPacha) |[<img src="https://avatars.githubusercontent.com/u/117035764?v=4" width=115><br><sub>Marian Garcia</sub>](https://github.com/Marian4gc) | [<img src="https://avatars.githubusercontent.com/u/116543383?v=4" width=115><br><sub>Veronika Komarova</sub>](https://github.com/VeronikaKoma)|[<img src="https://avatars.githubusercontent.com/u/114617641?v=4" width=115><br><sub>Francisco Aguirre</sub>](hhttps://github.com/Francisco-Aguirr) | [<img src="https://avatars.githubusercontent.com/u/118717951?v=4" width=115><br><sub>Margarita Alvarez</sub>](https://github.com/MargaritaAlvarezGonz?tab=repositories) | [<img src="https://avatars.githubusercontent.com/u/117463292?v=4" width=115><br><sub>Anyell</sub>](https://github.com/Anismelow) |[<img src="https://github.com/irenefl" width=115><br><sub>Irene Fernandez</sub>](https://github.com/irenefl)
 | :---: | :---: | :---: |  :---: |  :---: | :---: | :---: | :---: | :---: |
 
 

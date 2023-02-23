@@ -11,8 +11,8 @@ import fakeAPI from '../json/fakeAPI'
 
 function AddAnimals() {
 
-    
-    
+
+
     let [animal, setAnimal] = useState([...fakeAPI]);
     let [name, setName] = useState("");
     let [age, setAge] = useState("");
@@ -24,52 +24,37 @@ function AddAnimals() {
     let [imagePreview, setImagePreview] = useState("")
 
 
-function addPets() {
-    
-    
-    const reader = new FileReader();
-    reader.readAsDataURL(imageFile);
-    reader.onloadend = () => {
+    function addPets() {
+
         let newId = animal.length > 0 ? animal[animal.length - 1].id + 10 : 1;
-      setAnimal([
-        ...animal,
-        {
-          id: newId,
-          Name: name,
-          Age: age,
-          Height: height,
-          Description: description,
-          Image: reader.result,
-          Species: species,
-        },
-      ]);
-    };
-    setName("");
-    setAge("");
-    setHeight("");
-    setDescription("");
-    setImageFile(null);
-    setImagePreview("");
-    setSpecie("");
-  }
-useEffect(() => {
-    localStorage.setItem("animals", JSON.stringify(animal));
-}, [animal]);
+
+        setAnimal([...animal, { id: newId, Name: name, Age: age, Height: height, Description: description, Image: image, Species: species }]);
 
 
-const handleImageChange = (e) => {
-    const file = e.target.files[0];
-    const imageUrl = URL.createObjectURL(file);
-    setImageFile(file);
-    setImagePreview(imageUrl);
-  };
- 
-    
+
+        setName("");
+        setAge("");
+        setHeight("");
+        setDescription("");
+        setImage("");
+        setSpecie("");
 
 
 
 
-    
+    }
+    useEffect(() => {
+        localStorage.setItem("animals", JSON.stringify(animal));
+    }, [animal]);
+
+
+
+
+
+
+
+
+
 
     return (
         <div className="container m-auto  addAnimals">
@@ -87,7 +72,7 @@ const handleImageChange = (e) => {
                     <Col>
                         <Form.Group className="d-flex">
                             <Form.Group className="col-2 me-5">
-                                <Form.Label  column sm={1}>
+                                <Form.Label column sm={1}>
                                     Edad...
                                 </Form.Label>
                                 <Col>
