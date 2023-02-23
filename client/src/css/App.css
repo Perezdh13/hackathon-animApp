@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .gap-5{
   justify-content: center;
 }
@@ -9,4 +10,11 @@
 .age{
   
   align-items: end;
+=======
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+>>>>>>> contact
 }

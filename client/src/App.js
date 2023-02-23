@@ -8,7 +8,9 @@ import HomePage from './components/HomePage';
 import SingleAnimal from './components/SingleAnimal';
 import Contact from './components/Contact';
 import '../src/css/App.css';
-import AboutMe  from './components/AboutMe';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Contact from './components/Contact';
+import '../src/css/contact.css'
 
 function App() {
 
@@ -32,6 +34,8 @@ function App() {
     <div className="App">
       
      
+      <h1>animApp </h1>
+      <Contact></Contact>
       <RouterProvider router={router} />
     </div>
   );
