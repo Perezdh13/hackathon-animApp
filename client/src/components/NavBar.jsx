@@ -14,13 +14,19 @@ function BasicExample() {
               Adopta
             </Nav.Link>
             <Nav.Link className="text-white me-5" href="#link">
+            <Link to="/anuncia">
             Anuncia tu mascota
+            </Link>
             </Nav.Link>
             <Nav.Link className="text-white me-5 " href="#link">
+              <Link to="/contact">
               Contacto
+              </Link>
             </Nav.Link>
             <Nav.Link className="text-white me-5 " href="#link">
+              <Link to="/report">
               Reportar abuso o maltrato
+            </Link>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

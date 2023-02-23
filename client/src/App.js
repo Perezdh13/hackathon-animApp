@@ -3,13 +3,13 @@ import HeaderBar from './components/HeaderBar';
 import AddAnimals from './components/AddAnimals';
 import FooterBar from './components/FooterBar';
 import './css/footer.css';
-import Search from './components/Search';
+import Cards from './components/Cards';
 import Carrousel from './components/Carrousel';
 import HomePage from './components/HomePage';
-import SingleAnimal from './components/SingleAnimal';
+import Contact from './components/Contact';
 import '../src/css/App.css';
 import AboutMe  from './components/AboutMe';
-import ReportarAbuso  from './components/ReportarAbuso';
+import Report  from './components/ReportarAbuso';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import '../src/css/contact.css'
@@ -21,16 +21,25 @@ function App() {
   const router = createBrowserRouter([
     {
       path:"/",
-      element:<><HeaderBar /> <Carrousel/> <HomePage/> <FooterBar/> </>
+      element:<><HeaderBar /> <Carrousel/> <Cards/> <FooterBar/> </>
     },
     {
       path:"/aboutUs",
       element:<> <HeaderBar /> <AboutMe /> <FooterBar/>  </>
     },
     {
-      path: "/reportarabuso",
-      element: <> <ReportarAbuso/> </>
+      path: "/contact",
+      element: <> <HeaderBar /> <Contact/><FooterBar/> </>
     },
+    {
+      path:"/anuncia",
+      element:<> <HeaderBar /> <AddAnimals/> <FooterBar/></>
+    },
+    {
+      path:"/report",
+      element:<> <HeaderBar /> <Report/><FooterBar/></>
+    }
+
   ]);
 
   return (

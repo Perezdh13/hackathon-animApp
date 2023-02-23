@@ -5,7 +5,9 @@ function FooterBar() {
   return (
     <div className = "Container-fluid">
       <div className='container-fluid-contact'>
+      <Link to="/contact">
       <img  className='logo' src={require('../img/Dog Heart.png')} alt="" />
+      </Link>
       <p>Contacto</p>
       </div>
       <div className='container-fluid-aboutUs'>
@@ -15,7 +17,9 @@ function FooterBar() {
       <p>Sobre nosotros</p>
       </div>
       <div className='container-fluid-report'>
-        <img className='logo' src={require('../img/Turtle.png')} alt="" />
+        <Link to="/report">
+          <img className='logo' src={require('../img/Turtle.png')} alt="" />
+       </Link>
         <p>Notificar Abuso</p>
         </div>
     </div>
