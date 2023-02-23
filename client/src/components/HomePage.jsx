@@ -1,8 +1,13 @@
 import React from 'react';
-import HeaderBar from './HeaderBar'
+import Cards from './Cards';
+import Search from './Search';
 function HomePage() {
+ 
   return (
-    <div></div>
+    <div>
+      <Search/>
+      <Cards/>
+    </div>
   )
 }
 

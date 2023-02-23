@@ -10,7 +10,7 @@ import '../src/css/App.css';
 import AboutMe  from './components/AboutMe';
 import ReportarAbuso  from './components/ReportarAbuso';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Cards from './components/Cards';
+
 import '../src/css/contact.css'
 
 
@@ -20,7 +20,7 @@ function App() {
   const router = createBrowserRouter([
     {
       path:"/",
-      element:<><HeaderBar /> <Carrousel/><Search/> <FooterBar/> </>
+      element:<><HeaderBar /> <Carrousel/> <HomePage/> <FooterBar/> </>
     },
     {
       path:"/about",
