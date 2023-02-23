@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
+import { Link } from "react-router-dom";
 
 import Navbar from 'react-bootstrap/Navbar';
 
@@ -60,25 +61,25 @@ function Cards() {
 
 
 
-      <div className="pets-container">
-        {pets.map((pet) => (
-          <div className="cardi" key={pet.Id}>
-            <div className="face front">
-              <img src={Object.values(pet.Image)} alt="file not found" />
-              <h3>{pet.Name}</h3>
-            </div>
-            <div className="face back">
-              <h3>{pet.Name}</h3>
-              <p>{pet.Description}</p>
-              <p>Edad: {pet.Age}</p>
-              <p>Altura: {pet.Height}</p>
-              <div className="link">
-                <p target='_blank'>Adoptame</p>
-              </div>
+    <div className="pets-container">
+      {pets.map((pet) => (
+        <div className="cardi" key={pet.Id}>
+          <div className="face front">
+            <img src={Object.values(pet.Image)[0]} alt="file not found" />
+            <h3>{pet.Name}</h3>
+          </div>
+          <div className="face back">
+            <h3>{pet.Name}</h3>
+            <p>{pet.Description}</p>
+            <p>Edad: {pet.Age}</p>
+            <p>Altura: {pet.Height}</p>
+            <div className="link">
+                    <a href="./AdoptMe">Adoptame</a>
             </div>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
+    </div>
     </>
   );
 }

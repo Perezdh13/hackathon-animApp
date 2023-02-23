@@ -12,6 +12,7 @@ import Report  from './components/ReportarAbuso';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../src/css/contact.css'
 import fakeAPI from './json/fakeAPI'
+import AdoptMe from './components/AdoptMe';
 
 
 
@@ -43,8 +44,12 @@ localStorage.setItem("animals",JSON.stringify(fakeAPI));
     {
       path:"/report",
       element:<> <HeaderBar /> <Report/><FooterBar/></>
-    }
+    },
 
+    {
+      path:"/AdoptMe",
+      element:<> <HeaderBar /> <AdoptMe/><FooterBar/></>
+    }
   ]);
 
   return (
