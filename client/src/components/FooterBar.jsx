@@ -2,7 +2,12 @@ import React from 'react'
 
 function FooterBar() {
   return (
-    <div>FooterBar</div>
+    <div className = "Container-fluid">
+      <img src="../img/Dog Heart.png" alt="" />
+    </div>
+
+  
+
   )
 }
 

@@ -9,6 +9,7 @@ import SingleAnimal from './components/SingleAnimal';
 import Contact from './components/Contact';
 import '../src/css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/footer.css';
 
 function App() {
 
