@@ -17,7 +17,7 @@ AnimApp es una aplicación web de comercio electrónico diseñada para ayudar a 
 ## Prototipado
 
 
-![readme figma](https://user-images.githubusercontent.com/116543383/221028343-12f9f152-c000-44d2-9fca-36ff163534a4.png)
+![readme figma](https://user-images.githubusercontent.com/116543383/221030284-a6187222-b4b5-41c9-b737-1a148498a2d6.png)
 
 
 ## Instalación
