@@ -12,3 +12,9 @@
     height: 3rem;
     margin: auto;
 }
+
+@media ( min:480px) and  (max:599px){
+    .logo {
+        display: none;
+    }
+}
