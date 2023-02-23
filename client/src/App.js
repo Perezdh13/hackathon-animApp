@@ -2,6 +2,7 @@ import {createBrowserRouter, RouterProvider} from 'react-router-dom';
 import HeaderBar from './components/HeaderBar';
 import AddAnimals from './components/AddAnimals';
 import FooterBar from './components/FooterBar';
+import './css/footer.css';
 import Search from './components/Search';
 import Carrousel from './components/Carrousel';
 import HomePage from './components/HomePage';
@@ -34,11 +35,10 @@ function App() {
 
   return (
     <div className="App">
-     
-      
-      <RouterProvider router={router} />
+          <RouterProvider router={router} />
     </div>
   );
 }
 
-export default App;
+export default App; 
+
