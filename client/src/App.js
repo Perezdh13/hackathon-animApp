@@ -1,5 +1,5 @@
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
-import HeaderBar from './components/HeaderBar';
+import HeaderBar from './components/headerBar';
 import AddAnimals from './components/AddAnimals';
 import FooterBar from './components/FooterBar';
 import Search from './components/Search';
@@ -9,6 +9,7 @@ import SingleAnimal from './components/SingleAnimal';
 import Contact from './components/Contact';
 import '../src/css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Cards from './components/Cards';
 
 function App() {
 
@@ -31,7 +32,7 @@ function App() {
   return (
     <div className="App">
       
-      
+      <Cards></Cards>
       <RouterProvider router={router} />
     </div>
   );
