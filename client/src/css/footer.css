@@ -1,0 +1,27 @@
+.Container-fluid {
+    background-color: #A17161 !important;
+    height: 5rem;
+    margin-top: 43px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.Container-fluid div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.Container-fluid img{
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+}
+
+
+   
+
+

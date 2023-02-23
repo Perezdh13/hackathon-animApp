@@ -1,0 +1,20 @@
+{
+    "anuncios": [
+      {
+        "id": 1,
+        "nombre": "Producto 1",
+        "descripcion": "Descripción del producto 1",
+        "precio": 10.99,
+        "imagen": "/ruta/de/la/imagen1.jpg"
+      },
+      {
+        "id": 2,
+        "nombre": "Producto 2",
+        "descripcion": "Descripción del producto 2",
+        "precio": 19.99,
+        "imagen": "/ruta/de/la/imagen2.jpg"
+      }
+      
+    ]
+  }
+  
