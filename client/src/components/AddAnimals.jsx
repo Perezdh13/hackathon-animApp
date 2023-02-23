@@ -4,15 +4,16 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import InputGroup from 'react-bootstrap/InputGroup';
+import fakeAPI from '../json/fakeAPI'
 
+let data = JSON.parse(localStorage.getItem("animals")) || []
 
 
 function AddAnimals() {
 
-    let data = JSON.parse(localStorage.getItem("animals")) || []
-
+    let [pets,setPets] = useState([...fakeAPI])
     let [alertTxt, setAlertTxt] = useState("");
-    let [animal, setAnimal] = useState([...data]);
+    let [animal, setAnimal] = useState([...fakeAPI]);
     let [name, setName] = useState("");
     let [age, setAge] = useState("");
     let [height, setHeight] = useState("");
@@ -21,28 +22,34 @@ function AddAnimals() {
     let [species, setSpecie] = useState("");
 
 
-    function addPets() {
+function addPets() {
+    
+    let newId = animal.length > 0 ? animal[animal.length - 1].id + 10 : 1;
+    
+    setAnimal([...animal, { id: newId, Name: name, Age: age, Height: height, Description: description, Image: image, Species: species }]);
 
-        let newId = animal.length > 0 ? animal[animal.length - 1].id + 1 : 1;
+    
 
-        setAnimal([...animal, { id: newId, Name: name, Age: age, Height: height, Description: description, Image: image, Species: species }]);
-        setName("");
-        setAge("");
-        setHeight("");
-        setDescription("");
-        setImage("");
-        setSpecie("");
+    setName("");
+    setAge("");
+    setHeight("");
+    setDescription("");
+    setImage("");
+    setSpecie("");
+    
+    setAlertTxt("New task added");
+    setTimeout(() => {
+        setAlertTxt('');
+    }, 2000);
+    
+    
+}
+useEffect(() => {
+    localStorage.setItem("animals", JSON.stringify(animal));
+}, [animal]);
 
-        setAlertTxt("New task added");
-        setTimeout(() => {
-            setAlertTxt('');
-        }, 2000);
-
-
-    }
-    useEffect(() => {
-        localStorage.setItem("animals", JSON.stringify(animal));
-    }, [animal]);
+console.table(pets);
+   
 
 
 
