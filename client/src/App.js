@@ -8,6 +8,7 @@ import HomePage from './components/HomePage';
 import SingleAnimal from './components/SingleAnimal';
 import '../src/css/App.css';
 import AboutMe  from './components/AboutMe';
+import { ReportarAbuso } from './components/ReportarAbuso';
 
 function App() {
 
@@ -22,8 +23,8 @@ function App() {
       element:<>  <AboutMe />  </>
     },
     {
-      path:"/",
-      element:<>   </>
+      path:"/reportarabuso",
+      element:<> <ReportarAbuso />  </>
     },
   ])
 
