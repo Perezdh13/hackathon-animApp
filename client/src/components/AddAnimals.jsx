@@ -1,49 +1,178 @@
 import React, { useEffect, useState } from "react"
+import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
+import InputGroup from 'react-bootstrap/InputGroup';
+import fakeAPI from '../json/fakeAPI'
+
+let data = JSON.parse(localStorage.getItem("animals")) || []
 
 
 function AddAnimals() {
 
-    let data = JSON.parse(localStorage.getItem("animals")) || []
-
+    let [pets,setPets] = useState([...fakeAPI])
     let [alertTxt, setAlertTxt] = useState("");
-    let [animal, setAnimal] = useState([...data]);
+    let [animal, setAnimal] = useState([...fakeAPI]);
     let [name, setName] = useState("");
-    let [day, setDay] = useState("");
+    let [age, setAge] = useState("");
+    let [height, setHeight] = useState("");
     let [description, setDescription] = useState("");
+    let [image, setImage] = useState("");
+    let [species, setSpecie] = useState("");
 
-    function addTask() {
-        let newId = animal.length > 0 ? animal[animal.length - 1].id + 1 : 1;
-        setAnimal([...animal, { id: newId, Name: name, Day: day, Description: description }]);
-        setName("");
-        setDay("");
-        setDescription("");
 
-        setAlertTxt("New task added");
-        setTimeout(() => {
-            setAlertTxt('');
-        }, 2000);
-
-        
-    }
-    useEffect(() => {
-        localStorage.setItem("animals", JSON.stringify(animal));
-    }, [animal]);
-
+function addPets() {
+    
+    let newId = animal.length > 0 ? animal[animal.length - 1].id + 10 : 1;
+    
+    setAnimal([...animal, { id: newId, Name: name, Age: age, Height: height, Description: description, Image: image, Species: species }]);
 
     
 
+    setName("");
+    setAge("");
+    setHeight("");
+    setDescription("");
+    setImage("");
+    setSpecie("");
+    
+    setAlertTxt("New task added");
+    setTimeout(() => {
+        setAlertTxt('');
+    }, 2000);
+    
+    
+}
+useEffect(() => {
+    localStorage.setItem("animals", JSON.stringify(animal));
+}, [animal]);
+
+console.table(pets);
+   
+
+
+
+
+
+    <div className='addTask-page-popUp'>
+        <h1>{alertTxt}</h1>
+    </div>
+
     return (
-        <div className='addTask-page'>
-            <h1>Add New Task</h1>
-            <div className='addTask-page-enterBox'>
-                <input className='addTask-page-enterBox-name' value={name} placeholder='Name...' onChange={e => setName(e.target.value)} />
-                <input className='addTask-page-enterBox-day' value={day} placeholder='Day...' onChange={e => setDay(e.target.value)} />
-                <input className='addTask-page-enterBox-description' value={description} placeholder='Description......' onChange={e => setDescription(e.target.value)} />
-                <button onClick={addTask} />
-            </div>
-            <div className='addTask-page-popUp'>
-                <h1>{alertTxt}</h1>
-            </div>
+        <div className="container m-auto  addAnimals">
+            <Form>
+                <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+                    <Col sm={10}>
+                        <Form.Label column sm={2}>
+                            Nombre...
+                        </Form.Label>
+                        <Form.Control value={name} onChange={e => setName(e.target.value)} />
+                    </Col>
+                </Form.Group>
+
+                <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+                    <Col>
+                        <Form.Group className="d-flex">
+                            <Form.Group className="col-2 me-5">
+                                <Form.Label  column sm={1}>
+                                    Edad...
+                                </Form.Label>
+                                <Col>
+                                    <Form.Control value={age} onChange={e => setAge(e.target.value)} />
+                                </Col>
+                            </Form.Group>
+                            <Form.Group className="d-flex age">
+                                <Form.Check className="me-2"
+                                    type="radio"
+                                    label="años"
+                                    name="formHorizontalRadios"
+                                    id="formHorizontalRadios1"
+                                />
+                                <Form.Check className="ms-2"
+                                    type="radio"
+                                    label="meses"
+                                    name="formHorizontalRadios"
+                                    id="formHorizontalRadios1"
+                                />
+                            </Form.Group>
+                            <Form.Group className="ms-4 ">
+                                <Form.Label column sm={6}>
+                                    Altura en cm
+                                </Form.Label>
+                                <Col className="w-75">
+                                    <Form.Control value={height} onChange={e => setHeight(e.target.value)} />
+                                </Col>
+                            </Form.Group>
+                        </Form.Group>
+                    </Col>
+                </Form.Group>
+
+                <Form.Group as={Row} className="mb-3" controlId="formHorizontalPassword">
+                    <Form.Label column sm={2}>
+                        Describe a tu mascota
+                    </Form.Label>
+                    <InputGroup>
+                        <Form.Control as="textarea" value={description} onChange={e => setDescription(e.target.value)} />
+                    </InputGroup>
+                </Form.Group>
+                <Form.Group>
+                    <Form.Label column sm={2}>
+                        Selecciona una especie
+                    </Form.Label>
+                    <Form.Select aria-label="Default select example" value={species} onChange={e => setSpecie(e.target.value)}>
+                        <option></option>
+                        <option value="Perro">Perro</option>
+                        <option value="Gato">Gato</option>
+                        <option value="Pez">Pez</option>
+                        <option value="Reptil">Reptil</option>
+                        <option value="Roedor">Roedor</option>
+                    </Form.Select>
+
+                    <Form.Group>
+                        <Form.Label>Seleccione una imagen:</Form.Label>
+                        <Form.Control type="file" onChange={e => setImage(e.target.value)} />
+                    </Form.Group>
+                    {"" && (
+                        <div>
+                            <img src={`data:image/jpeg;base64,${""}`} alt='' />
+                        </div>
+                    )}
+                </Form.Group>
+                <fieldset>
+                    <Form.Group as={Row} className="mb-3">
+                        <Col sm={10}>
+                            <Form.Label as="legend" column sm={2}>
+                                <Form.Check
+                                    type="radio"
+                                    label="Vacunación"
+                                    name="formHorizontalRadios"
+                                    id="formHorizontalRadios1"
+                                />
+                            </Form.Label>
+                            <Form.Check
+                                type="radio"
+                                label="Desparasitación"
+                                name="formHorizontalRadios"
+                                id="formHorizontalRadios2"
+                            />
+                            <Form.Check
+                                type="radio"
+                                label="Esterelización"
+                                name="formHorizontalRadios"
+                                id="formHorizontalRadios3"
+                            />
+                        </Col>
+                    </Form.Group>
+                </fieldset>
+
+
+
+                <Form.Group className="d-flex gap-5" >
+                    <Button variant="warning" onClick={addPets}>Publicar</Button>
+                    <Button variant="warning">Cancelar</Button>
+                </Form.Group>
+            </Form>
         </div>
     )
 }
