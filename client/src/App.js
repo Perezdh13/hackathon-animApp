@@ -35,8 +35,9 @@ function App() {
   return (
     <div className="App">
       
-      <Cards></Cards>
+      
       <Carrousel></Carrousel>
+      <Cards></Cards>
       <RouterProvider router={router} />
     </div>
   );
