@@ -9,7 +9,6 @@ import SingleAnimal from './components/SingleAnimal';
 import Contact from './components/Contact';
 import '../src/css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Contact from './components/Contact';
 import '../src/css/contact.css'
 
 function App() {
@@ -22,7 +21,7 @@ function App() {
     },
     {
       path:"/about",
-      element:<>  <AboutMe />  </>
+      element:<>    </>
     },
     {
       path:"/",
@@ -35,7 +34,7 @@ function App() {
       
      
       <h1>animApp </h1>
-      <Contact></Contact>
+      <Contact />
       <RouterProvider router={router} />
     </div>
   );
