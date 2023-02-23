@@ -1,70 +1,55 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# AnimApp
 
-## Available Scripts
+AnimApp es una aplicación web de comercio electrónico diseñada para ayudar a las personas a adoptar animales. Este proyecto fue desarrollado para el hackathon patrocinado por CaixaBank tech y Factoria f5, y utiliza React, Bootstrap, CSS y HTML.
 
-In the project directory, you can run:
+## Características
 
-### `npm start`
+- Interfaz de usuario intuitiva y fácil de usar.
+- Catálogo de animales disponibles para la adopción.
+- Página de detalles del animal con información detallada y fotos.
+- Formulario de solicitud de adopción.
+-Filtro para encontrar animales por raza.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Prototipado
 
-### `npm run build`
+Insertar capturas de pantalla aquí.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Instalación
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Clona el repositorio en tu máquina local:
+-Git clone https://github.com/tuusuario/animapp.git
+- Utiliza Npm start 
+- Npm install. 
+- Accede a la aplicación en tu navegador web en [http://localhost:3000](http://localhost:3000)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Dependencias
 
-### `npm run eject`
+-Boostrapt 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Herramientas utilizadas:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<div align="center">
+  <img align="center" alt="HTML" title="HTML 5" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img align="center" alt="CSS" title="CSS 3" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+  <img align="center" alt="React" title="React" height="50" width="100" src="https://res.cloudinary.com/practicaldev/image/fetch/s--fced_LNQ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/1zg83mt0lo13dfmff1cr.png">
+  <img align="center" alt="JavaScript" title="JavaScript" height="50" width="60" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+<br><br>
+  <img align="center" alt="Git" title="Git" height="50" width="80" src="https://blog.facialix.com/wp-content/uploads/2021/04/git-github-cero-facialix.jpg">
+  <img align="center" alt="figma" title="figma" height="50" width="80" src="https://www.protocol.com/media-library/figma-logo.png?id=29208385&width=1200&height=600&coordinates=0%2C60%2C0%2C60">
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+</div>
 
-## Learn More
+## Participantes
+Este proyecto ha sido realizado por un equipo de 9 programadores en formación:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[<img src="https://avatars.githubusercontent.com/u/120563338?v=4" width=115><br><sub>Pablo Pérez González</sub>](https://github.com/Perezdh13)|[<img src="https://avatars.githubusercontent.com/u/115170876?v=4" width=115><br><sub> Xavi Villaverde </sub>](https://github.com/Xavi1594)|[<img src="https://avatars.githubusercontent.com/u/110405159?v=4" width=115><br><sub>Yorlin Pachajoa</sub>](https://github.com/YorlinPacha) |[<img src="https://avatars.githubusercontent.com/u/117035764?v=4" width=115><br><sub>Marian Garcia</sub>](https://github.com/Marian4gc) | [<img src="https://github.com/irenefl" width=115><br><sub>Irene Fernandez</sub>](https://github.com/irenefl) |[<img src="https://avatars.githubusercontent.com/u/114617641?v=4" width=115><br><sub>Francisco Aguirre</sub>](hhttps://github.com/Francisco-Aguirr) | [<img src="https://avatars.githubusercontent.com/u/118717951?v=4" width=115><br><sub>Margarita Alvarez</sub>](https://github.com/MargaritaAlvarezGonz?tab=repositories) | [<img src="https://avatars.githubusercontent.com/u/117463292?v=4" width=115><br><sub>Anyell</sub>](https://github.com/Anismelow) | [<img src="https://avatars.githubusercontent.com/u/116543383?v=4" width=115><br><sub>Veronika Komarova</sub>](https://github.com/VeronikaKoma)
+| :---: | :---: | :---: |  :---: |  :---: | :---: | :---: | :---: | :---: |
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  
