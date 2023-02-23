@@ -20,34 +20,51 @@ function AddAnimals() {
     let [description, setDescription] = useState("");
     let [image, setImage] = useState("");
     let [species, setSpecie] = useState("");
+    let [imageFile, setImageFile] = useState(null);
+    let [imagePreview, setImagePreview] = useState("")
 
 
 function addPets() {
     
-    let newId = animal.length > 0 ? animal[animal.length - 1].id + 10 : 1;
     
-    setAnimal([...animal, { id: newId, Name: name, Age: age, Height: height, Description: description, Image: image, Species: species }]);
-
-    
-
+    const reader = new FileReader();
+    reader.readAsDataURL(imageFile);
+    reader.onloadend = () => {
+        let newId = animal.length > 0 ? animal[animal.length - 1].id + 10 : 1;
+      setAnimal([
+        ...animal,
+        {
+          id: newId,
+          Name: name,
+          Age: age,
+          Height: height,
+          Description: description,
+          Image: reader.result,
+          Species: species,
+        },
+      ]);
+    };
     setName("");
     setAge("");
     setHeight("");
     setDescription("");
-    setImage("");
+    setImageFile(null);
+    setImagePreview("");
     setSpecie("");
-    
-    
-    
-    
-}
+  }
 useEffect(() => {
     localStorage.setItem("animals", JSON.stringify(animal));
 }, [animal]);
 
 
-   
-
+const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    const imageUrl = URL.createObjectURL(file);
+    setImageFile(file);
+    setImagePreview(imageUrl);
+  };
+ 
+    
 
 
 
@@ -126,11 +143,11 @@ useEffect(() => {
 
                     <Form.Group>
                         <Form.Label>Seleccione una imagen:</Form.Label>
-                        <Form.Control type="file" onChange={e => setImage(e.target.value)} />
+                        <Form.Control type="file" onChange={handleImageChange} />
                     </Form.Group>
-                    {"" && (
+                    {imagePreview && (
                         <div>
-                            <img src={`data:image/jpeg;base64,${""}`} alt='' />
+                            <img src={imagePreview} alt='' />
                         </div>
                     )}
                 </Form.Group>
