@@ -23,7 +23,7 @@ const pets = [
         Height:"15 cm",
         Description:"Soy muy bueno, achuchable y esponjoso",
         Species:"Perro",
-        Image:{dog1}
+        Image: {dog1}
     },
     {
         Id:2,
