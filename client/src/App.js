@@ -8,7 +8,11 @@ import HomePage from './components/HomePage';
 import SingleAnimal from './components/SingleAnimal';
 import Contact from './components/Contact';
 import '../src/css/App.css';
+<<<<<<< HEAD
 import 'bootstrap/dist/css/bootstrap.min.css';
+=======
+import AboutMe  from './components/AboutMe';
+>>>>>>> about-me
 
 function App() {
 
@@ -16,11 +20,19 @@ function App() {
 
     {
       path:"/",
+<<<<<<< HEAD
       element:<><AddAnimals/></>
     },
     {
       path:"/singleAnimal",
       element:<> <HeaderBar/> <SingleAnimal/> <FooterBar/> </>
+=======
+      element:<><HeaderBar /> <AddAnimals/>  </>
+    },
+    {
+      path:"/about",
+      element:<>  <AboutMe />  </>
+>>>>>>> about-me
     },
     {
       path:"/",
