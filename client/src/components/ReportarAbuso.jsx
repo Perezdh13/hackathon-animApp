@@ -17,4 +17,8 @@ o abuso repórtalo a las autoridades competentes.
 )
 }
 
+<<<<<<< HEAD
 export default ReportarAbuso
+=======
+export default ReportarAbuso
+>>>>>>> 65d1b000919961d0505568dccc4d16a00b9b7b30
