@@ -9,6 +9,7 @@ import SingleAnimal from './components/SingleAnimal';
 import Contact from './components/Contact';
 import '../src/css/App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './components/FooterBar';
 import './css/footer.css';
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
 
     {
       path:"/",
-      element:<><AddAnimals/></>
+      element:<><AddAnimals/> <FooterBar/></>
     },
     {
       path:"/singleAnimal",
@@ -39,3 +40,5 @@ function App() {
 }
 
 export default App;
+
+

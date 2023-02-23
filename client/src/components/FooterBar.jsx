@@ -3,11 +3,8 @@ import React from 'react'
 function FooterBar() {
   return (
     <div className = "Container-fluid">
-      <img src="../img/Dog Heart.png" alt="" />
+      <img src={require('../img/Dog Heart.png')} alt="" />
     </div>
-
-  
-
   )
 }
 
