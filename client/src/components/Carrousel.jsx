@@ -19,7 +19,6 @@ function Carrousel() {
           />
           <Carousel.Caption>
             <h3>{pet.Name}</h3>
-            <p>{pet.Description}</p>
           </Carousel.Caption>
         </Carousel.Item>
       ))}

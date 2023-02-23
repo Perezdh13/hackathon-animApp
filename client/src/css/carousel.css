@@ -1,3 +1,16 @@
 .img-car{
     height: 40vh;
 }
+h3{
+    background: rgba(0, 0, 0, .4);   
+}
+@media screen and (min-width: 768px ) {
+    .img-car{
+        height: 60vh;
+    }
+}
+@media screen and (min-width: 1024px ) {
+    .img-car{
+        height: 100vh;
+    }
+}
