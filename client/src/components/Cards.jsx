@@ -9,7 +9,7 @@ function Cards() {
       {pets.map((pet) => (
         <div className="cardi" key={pet.Id}>
           <div className="face front">
-            <img src={pet.Image} alt="file not found" />
+            <img src={Object.values(pet.Image)[0]} alt="file not found" />
             <h3>{pet.Name}</h3>
           </div>
           <div className="face back">
