@@ -1,8 +1,8 @@
-import React from 'react'
-
+import React from 'react';
+import HeaderBar from './HeaderBar'
 function HomePage() {
   return (
-    <div>HomePage</div>
+    <div><HeaderBar /></div>
   )
 }
 

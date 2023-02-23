@@ -1,0 +1,29 @@
+.rounded-3 {
+    background: linear-gradient(rgba(161, 113, 97, 1), white)  !important;    
+    margin: 5%;
+    font-family: 'Poppins', sans-serif;
+    }
+    
+.btn-primary {
+    background: rgba(243, 179, 76, 1) !important;
+    color:black;
+    border: none;
+}
+    
+.mx-auto {
+    padding-top: 20px;
+}
+    
+.mb-3 .error {
+    color: #e92b2d;
+    font-weight: 600;
+    font-size: 12px;
+}
+    
+.mb-3 .exito {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 20px;
+    color: #235c02;
+    font: bold;
+}

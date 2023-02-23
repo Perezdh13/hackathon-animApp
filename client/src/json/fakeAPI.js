@@ -1,18 +1,18 @@
-import dog1 from './img/perro-1.jpg';
-import dog2 from './img/perro-2.jpg';
-import dog3 from './img/perro-3.jpg';
-import cat1 from './img/gato-1.jpg';
-import cat2 from './img/gato-2.jpg';
-import cat3 from './img/gato-3.jpg';
-import fish1 from './img/pez-payaso.jpg';
-import fish2 from './img/pez-beta.jpg';
-import fish3 from './img/pez-cirujano.jpg';
-import reptile1 from './img/iguana.jpg';
-import reptile2 from './img/camaleon.jpg';
-import reptile3 from './img/tortuga.jpg';
+import dog1 from './img/adorable-perro-basenji-marron-blanco-sonriendo-dando-maximo-cinco-aislado-blanco.jpg';
+import dog2 from './img/hermoso-retrato-mascota-perro.jpg';
+import dog3 from './img/perro-pequeno-siendo-adorable-retrato-estudio.jpg';
+import cat1 from './img/adorable-gatito-pared-monocromatica-detras-ella.jpg';
+import cat2 from './img/gato-blanco-encuentra-rodillas-mujer.jpg';
+import cat3 from './img/mujer-jugando-gato-callejero.jpg';
+import fish1 from './img/pez-payaso-color-hermoso-feefs-coral.jpg';
+import fish2 from './img/hermoso-color-pez-mandarin-colorido-pez-mandarin-pez-mandarin-closeup-pez-mandarin-o-manda.jpg';
+import fish3 from './img/primer-plano-pez-azul-amarillo-acuario.jpg';
+import reptile1 from './img/closeup-cabeza-iguana-verde.jpg';
+import reptile2 from './img/chameleon-4501712_1280.jpg';
+import reptile3 from './img/turtle-3700681_1280.jpg';
 import rodent1 from './img/hamster.jpg';
-import rodent2 from './img/rata.jpg';
-import rodent3 from './img/cobaya.jpg';
+import rodent2 from './img/guinea-pig-ga9cc42275_1280.jpg';
+import rodent3 from './img/roof-rat-g7b5b84da1_1280.jpg';
 
 
 const pets = [
@@ -145,10 +145,12 @@ const pets = [
     {
         Id:15,
         Name:"Grinch",
-        Age:"1",
+        Age:"1 mes",
         Height:"6 meses",
         Description:"Hoy no me peine, y si no odio la navidad",
         Species:"Roedor",
         Image:{rodent3}
     }
 ] 
+
+export default pets;
