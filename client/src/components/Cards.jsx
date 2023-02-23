@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
+import { Link } from "react-router-dom";
 
 import Navbar from 'react-bootstrap/Navbar';
 
@@ -73,7 +74,7 @@ useEffect(() => {
             <p>Edad: {pet.Age}</p>
             <p>Altura: {pet.Height}</p>
             <div className="link">
-                    <p target='_blank'>Adoptame</p> 
+                    <a href="./AdoptMe">Adoptame</a>
             </div>
           </div>
         </div>
