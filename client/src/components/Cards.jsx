@@ -73,7 +73,7 @@ useEffect(() => {
             <p>Edad: {pet.Age}</p>
             <p>Altura: {pet.Height}</p>
             <div className="link">
-                    <a href="https://github.com/Francisco-Aguirr/replicaWeb" target='_blank'>Adoptame</a>
+                    <p target='_blank'>Adoptame</p> 
             </div>
           </div>
         </div>
