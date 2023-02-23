@@ -8,7 +8,7 @@ import Carrousel from './components/Carrousel';
 import Contact from './components/Contact';
 import '../src/css/App.css';
 import AboutMe  from './components/AboutMe';
-import Report  from './components/ReportarAbuso';
+import Report  from './components/Report';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../src/css/contact.css'
 import fakeAPI from './json/fakeAPI'
