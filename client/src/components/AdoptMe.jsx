@@ -27,4 +27,3 @@ function AdoptMe() {
 
 export default AdoptMe
 
-export default AdoptMe

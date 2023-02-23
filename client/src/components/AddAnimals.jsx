@@ -128,7 +128,7 @@ function AddAnimals() {
 
                     <Form.Group>
                         <Form.Label>Seleccione una imagen:</Form.Label>
-                        <Form.Control type="file" onChange={handleImageChange} />
+                        <Form.Control type="file"  />
                     </Form.Group>
                     {imagePreview && (
                         <div>
