@@ -8,11 +8,7 @@ import HeaderBar from './components/headerBar'
 import SingleAnimal from './components/SingleAnimal';
 import Contact from './components/Contact';
 import '../src/css/App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../src/css/contact.css'
-
-
-
+import AboutMe  from './components/AboutMe';
 
 function App() {
   const router = createBrowserRouter([
@@ -26,8 +22,8 @@ function App() {
       element:<>    </>
     },
     {
-      path:"/",
-      element:<>   </>
+      path:"/reportarabuso",
+      element:<> <ReportarAbuso />  </>
     },
   ])
 
