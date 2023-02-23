@@ -3,29 +3,6 @@ import { ErrorMessage, Form, Field, Formik } from 'formik';
 
 function Contact() {
 
-    let data = JSON.parse(localStorage.getItem("persons")) || []
-
-    // let [alertTxt, setAlertTxt] = useState("");
-    let [person, setPerson] = useState([...data]);
-    let [name, setName] = useState("");
-    let [mail, setMail] = useState("");
-    let [message, setMessage] = useState("");
-
-    function addPerson() {
-
-        let newId = person.length > 0 ? person[person.length - 1].id + 1 : 1;
-
-        setPerson([...person, { id: newId, Name: name, Mail: mail, Message: message }])
-        setName("");
-        setMail("");
-        setMessage("");
-    }
-
-    useEffect(() => {
-        localStorage.setItem("persons", JSON.stringify(person));
-    }, [person]);
-
-
         const [formularioEnviado, cambiarFormularioEnviado] = useState(false);
     return (
     <>
@@ -84,7 +61,6 @@ function Contact() {
                         type="text"
                         name="name"
                         placeholder="Pepita Pérez"
-                        value={name} onChange={e => setName(e.target.value)}
                     />
                     <ErrorMessage name="name" component={() => (
                     <div className='error'>{errors.name}</div>
@@ -99,7 +75,6 @@ function Contact() {
                             id="mail"
                             name="mail"
                             placeholder="Correo@corrreo.com"
-                            value={mail} onChange={e => setMail(e.target.value)}
                         />
                         <ErrorMessage name="mail" component={() => (
                     <div className='error'>{errors.mail}</div>
@@ -115,7 +90,6 @@ function Contact() {
                         name="message"
                         as="textarea"
                         placeholder="Hola! Quisiera ponerme en contacto para/por..."
-                        value={message} onChange={e => setMessage(e.target.value)}
                     />
                     <ErrorMessage name="message" component={() => (
                     <div className='error'>{errors.message}</div>
@@ -124,9 +98,13 @@ function Contact() {
 
 
                 <div className="d-grid gap-2 col-6 mx-auto">
-                    <button className="btn btn-primary" type="submit" disabled={isSubmitting}>Enviar</button>
+                    <button 
+                    // onClick={addPerson}
+                    className="btn btn-primary" 
+                    type="submit" disabled={isSubmitting}>Enviar</button>
                     {formularioEnviado && <p className='exito'>Mensaje enviado correctamente, gracias!</p>}
                 </div>
+                
                 </Form>
             </div>
             )}  
