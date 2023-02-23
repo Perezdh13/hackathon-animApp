@@ -1,5 +1,5 @@
 .Container-fluid {
-    background-color: #A17161;
+    background-color: #A17161 !important;
     height: 5rem;
     margin-top: 43px;
     display: flex;
