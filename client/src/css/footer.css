@@ -20,8 +20,26 @@
     height: 3rem;
     margin: 0;
 }
-
-
-   
-
+.report-text{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.report-text-h3{
+    background-color: white;
+    margin-top: 5px;
+}
+.aboutMe{
+    margin-top: 50px;
+    
+}
+.aboutMe-h3{
+    background-color: white;
+    
+}
+.container-aboutMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 
