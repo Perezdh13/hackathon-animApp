@@ -15,9 +15,9 @@ const Search = () => {
   const [pets, setPets] = useState([...data]);
   const [species, setSpecies] = useState("");
   const [filteredData, setFilteredData] = useState([]);
-
-  useEffect(() => {
-   
+console.table(pets)
+ 
+useEffect(() => {
     const animalsData = JSON.parse(localStorage.getItem("animals")) || [];
     setPets(animalsData);
   }, []);
@@ -26,11 +26,13 @@ const Search = () => {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    
-    const newFilteredData = data.filter((animal) => animal.species === species);
-    setFilteredData(newFilteredData);
+   if(species === ""){
+    setPets([...data])
+   }else{
+    const newFilteredData = data.filter((animal) => animal.Species === species);
+    setPets(newFilteredData);
+   }
   };
-  console.table(filteredData)
   
   return (
 
@@ -40,14 +42,14 @@ const Search = () => {
         <Navbar.Brand href="#">Escoge tu animalito</Navbar.Brand>    
           <Form className="d-flex ">
           <Form.Select aria-label="Default select example"  value={species} onChange={e => setSpecies(e.target.value)}>
-                        <option></option>
+                        <option value = "" ></option>
                         <option value="Perro">Perro</option>
                         <option value="Gato">Gato</option>
                         <option value="Pez">Pez</option>
                         <option value="Reptil">Reptil</option>
                         <option value="Roedor">Roedor</option>
                     </Form.Select>
-            <Button className='ms-1' variant="warning">Buscar</Button>
+            <Button onClick = { handleSearch}className='ms-1' variant="warning">Buscar</Button>
           </Form>
         
       </Container>

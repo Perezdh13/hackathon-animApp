@@ -1,10 +1,65 @@
 import "../css/cards.css"
 import React, { useState, useEffect } from "react";
-import pets from "../json/fakeAPI"; // importar la lista de pets desde la fake API
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
+let data = JSON.parse(localStorage.getItem("animals")) || []
 
 function Cards() {
+   const [pets, setPets] = useState([...data]);
+  const [species, setSpecies] = useState("");
+  const [filteredData, setFilteredData] = useState([]);
+
+  console.table(pets)
+ 
+useEffect(() => {
+    const animalsData = JSON.parse(localStorage.getItem("animals")) || [];
+    setPets(animalsData);
+  }, []);
+
+
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+   if(species === ""){
+    setPets([...data])
+   }else{
+    const newFilteredData = data.filter((animal) => animal.Species === species);
+    setPets(newFilteredData);
+   }
+  };
   return (
+
+
+<>
+      <Navbar bg="light" expand="lg">
+      <Container fluid>
+        <Navbar.Brand href="#">Escoge tu animalito</Navbar.Brand>    
+          <Form className="d-flex ">
+          <Form.Select aria-label="Default select example"  value={species} onChange={e => setSpecies(e.target.value)}>
+                        <option value = "" ></option>
+                        <option value="Perro">Perro</option>
+                        <option value="Gato">Gato</option>
+                        <option value="Pez">Pez</option>
+                        <option value="Reptil">Reptil</option>
+                        <option value="Roedor">Roedor</option>
+                    </Form.Select>
+            <Button onClick = { handleSearch}className='ms-1' variant="warning">Buscar</Button>
+          </Form>
+        
+      </Container>
+    </Navbar>
+
+
+
+    
+
+
+
     <div className="pets-container">
       {pets.map((pet) => (
         <div className="cardi" key={pet.Id}>
@@ -24,6 +79,7 @@ function Cards() {
         </div>
       ))}
     </div>
+    </>
   );
 }
 

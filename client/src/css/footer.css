@@ -5,16 +5,23 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    
 }
 
-.Container-fluid img .logo {
+.Container-fluid div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.Container-fluid img{
     width: 3rem;
     height: 3rem;
-    margin: auto;
+    margin: 0;
 }
 
-@media  (max-width: 599px) {
-    .logo{
-        display: none;
-    }
-}
+
+   
+
+

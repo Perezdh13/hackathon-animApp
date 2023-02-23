@@ -24,8 +24,8 @@ function App() {
       element:<><HeaderBar /> <Carrousel/> <HomePage/> <FooterBar/> </>
     },
     {
-      path:"/about",
-      element:<> <HeaderBar /> <AboutMe />  </>
+      path:"/aboutUs",
+      element:<> <HeaderBar /> <AboutMe /> <FooterBar/>  </>
     },
     {
       path: "/reportarabuso",
