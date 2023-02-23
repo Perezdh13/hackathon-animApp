@@ -3,7 +3,7 @@ import React from "react";
 
 export const Report = () => {
   return (
-    <div className="container">
+    <div className="container report">
         <p className="report-text">Si sabes de algún animal que esté sufriendo maltrato 
 o abuso repórtalo a las autoridades competentes.
 </p>

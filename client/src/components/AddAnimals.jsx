@@ -11,8 +11,8 @@ import fakeAPI from '../json/fakeAPI'
 
 function AddAnimals() {
 
-    
-    
+
+
     let [animal, setAnimal] = useState([...fakeAPI]);
     let [name, setName] = useState("");
     let [age, setAge] = useState("");
@@ -22,37 +22,37 @@ function AddAnimals() {
     let [species, setSpecie] = useState("");
 
 
-function addPets() {
-    
-    let newId = animal.length > 0 ? animal[animal.length - 1].id + 10 : 1;
-    
-    setAnimal([...animal, { id: newId, Name: name, Age: age, Height: height, Description: description, Image: image, Species: species }]);
+    function addPets() {
 
-    
+        let newId = animal.length > 0 ? animal[animal.length - 1].id + 10 : 1;
 
-    setName("");
-    setAge("");
-    setHeight("");
-    setDescription("");
-    setImage("");
-    setSpecie("");
-    
-    
-    
-    
-}
-useEffect(() => {
-    localStorage.setItem("animals", JSON.stringify(animal));
-}, [animal]);
+        setAnimal([...animal, { id: newId, Name: name, Age: age, Height: height, Description: description, Image: image, Species: species }]);
 
 
-   
+
+        setName("");
+        setAge("");
+        setHeight("");
+        setDescription("");
+        setImage("");
+        setSpecie("");
+
+
+
+
+    }
+    useEffect(() => {
+        localStorage.setItem("animals", JSON.stringify(animal));
+    }, [animal]);
 
 
 
 
 
-    
+
+
+
+
 
     return (
         <div className="container m-auto  addAnimals">
@@ -70,7 +70,7 @@ useEffect(() => {
                     <Col>
                         <Form.Group className="d-flex">
                             <Form.Group className="col-2 me-5">
-                                <Form.Label  column sm={1}>
+                                <Form.Label column sm={1}>
                                     Edad...
                                 </Form.Label>
                                 <Col>

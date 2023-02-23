@@ -1,7 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
-
 import "../css/carousel.css";
-import pets from '../json/fakeAPI'; // importamos la lista de objetos de mascotas
+import pets from '../json/fakeAPI'; 
 
 
 function Carrousel() {
