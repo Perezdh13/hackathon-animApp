@@ -1,8 +1,13 @@
-import React from 'react'
-
+import React from 'react';
+import Cards from './Cards';
+import Search from './Search';
 function HomePage() {
+ 
   return (
-    <div>HomePage</div>
+    <div>
+      <Search/>
+      <Cards/>
+    </div>
   )
 }
 
