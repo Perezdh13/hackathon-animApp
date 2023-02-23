@@ -15,6 +15,11 @@ function Cards() {
           <div className="face back">
             <h3>{pet.Name}</h3>
             <p>{pet.Description}</p>
+            <p>Edad: {pet.Age}</p>
+            <p>Altura: {pet.Height}</p>
+            <div className="link">
+                    <a href="https://github.com/Francisco-Aguirr/replicaWeb" target='_blank'>Adoptame</a>
+            </div>
           </div>
         </div>
       ))}
