@@ -51,7 +51,7 @@ function Contact() {
         }}
     >
             {( { isSubmitting, errors } ) => (
-            <div className="h-100 container md-auto rounded-3">
+            <div className="h-100 p-5 text-bg-dark rounded-3">
                 <Form className="mb-3">
                 <div>
                     <label htmlFor="name">Nombre</label>
