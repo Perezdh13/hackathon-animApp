@@ -5,7 +5,7 @@ import cat1 from './img/gato-1.jpg';
 import cat2 from './img/gato-2.jpg';
 import cat3 from './img/gato-3.jpg';
 import fish1 from './img/pez-payaso.jpg';
-import fish2 from './img/pez-beta.jpg';
+import fish2 from './img/pez-beta.png';
 import fish3 from './img/pez-cirujano.jpg';
 import reptile1 from './img/iguana.jpg';
 import reptile2 from './img/camaleon.jpg';
@@ -145,10 +145,13 @@ const pets = [
     {
         Id:15,
         Name:"Grinch",
-        Age:"1",
+        Age:"1 mes",
         Height:"6 meses",
         Description:"Hoy no me peine, y si no odio la navidad",
         Species:"Roedor",
         Image:{rodent3}
     }
 ] 
+
+export default pets
+
