@@ -6,13 +6,13 @@ import Row from 'react-bootstrap/Row';
 import InputGroup from 'react-bootstrap/InputGroup';
 import fakeAPI from '../json/fakeAPI'
 
-let data = JSON.parse(localStorage.getItem("animals")) || []
+
 
 
 function AddAnimals() {
 
-    let [pets,setPets] = useState([...fakeAPI])
-    let [alertTxt, setAlertTxt] = useState("");
+    
+    
     let [animal, setAnimal] = useState([...fakeAPI]);
     let [name, setName] = useState("");
     let [age, setAge] = useState("");
@@ -37,10 +37,7 @@ function addPets() {
     setImage("");
     setSpecie("");
     
-    setAlertTxt("New task added");
-    setTimeout(() => {
-        setAlertTxt('');
-    }, 2000);
+    
     
     
 }
@@ -48,16 +45,14 @@ useEffect(() => {
     localStorage.setItem("animals", JSON.stringify(animal));
 }, [animal]);
 
-console.table(pets);
+
    
 
 
 
 
 
-    <div className='addTask-page-popUp'>
-        <h1>{alertTxt}</h1>
-    </div>
+    
 
     return (
         <div className="container m-auto  addAnimals">

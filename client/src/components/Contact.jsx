@@ -1,4 +1,4 @@
-import React, {useEffect, useState,} from 'react';
+import React, { useState,} from 'react';
 import { ErrorMessage, Form, Field, Formik } from 'formik';
 
 function Contact() {

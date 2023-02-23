@@ -1,5 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
-import img1 from "../img/a7ed1cb4-3211-4ed3-bd6b-78b796f1c5de.jpg";
+
 import "../css/carousel.css";
 import pets from '../json/fakeAPI'; // importamos la lista de objetos de mascotas
 
