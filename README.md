@@ -3,6 +3,12 @@
 
 AnimApp es una aplicación web de comercio electrónico diseñada para ayudar a las personas a adoptar animales. Este proyecto fue desarrollado para el hackathon patrocinado por CaixaBank tech y Factoria f5, y utiliza React, Bootstrap, CSS y HTML.
 
+## Resultado final
+![47799ae7-e313-4f4d-a6ca-db48c49fe33d](https://user-images.githubusercontent.com/115170876/221117608-73375859-b8f3-4489-ab3d-04ef7e3dae47.jpg)
+![33d9702d-8a25-441b-878c-17226ed96d3b](https://user-images.githubusercontent.com/115170876/221117621-eb611f59-ffd4-41aa-ab25-cd2898542996.jpg)
+
+![f8c88f55-8982-4e10-994f-2cdcd85f7f48](https://user-images.githubusercontent.com/115170876/221117730-9c0132a6-4733-4782-b726-3eabe732915b.jpg)
+
 ## Características
 - Mobil first
 - Responsive
